@@ -1,0 +1,26 @@
+# Core ML & Data Science
+torch
+torchvision
+numpy
+pandas
+scikit-learn
+scikit-image
+matplotlib
+seaborn
+
+# Deep Learning & Models
+transformers
+diffusers
+accelerate
+lpips
+nudenet
+
+# Image Processing
+opencv-python
+Pillow
+
+# Utilities & App
+tqdm
+requests
+gradio
+ipython
