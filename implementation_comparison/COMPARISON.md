@@ -1,4 +1,4 @@
-# Architecture Comparison: Semantic Surgery vs. Original Implementation
+# Architecture Comparison: Semantic Transplant vs. Original Implementation
 
 This directory provides a direct code-level comparison between the original method (based on Concept Erasure) and our proposed **Semantic Transplant** framework.
 
