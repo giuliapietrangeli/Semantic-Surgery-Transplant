@@ -1,6 +1,6 @@
 # Architecture Comparison: Semantic Surgery vs. Original Implementation
 
-This directory provides a direct code-level comparison between the original method (based on Concept Erasure) and our proposed **Semantic Surgery** framework.
+This directory provides a direct code-level comparison between the original method (based on Concept Erasure) and our proposed **Semantic Transplant** framework.
 
 ## Files
 
@@ -38,7 +38,7 @@ The most significant architectural change is the ability to *replace* concepts r
         if text_replace:
             embedding_output = embedding_in + alpha_mask * (embedding_replace - embedding_erase)
         ```
-    *   **Impact**: Enables "Semantic Surgery" (e.g., turning a "dog" into a "cat" while preserving posture), rather than just "Amnesia".
+    *   **Impact**: Enables "Semantic Transplant" (e.g., turning a "dog" into a "cat" while preserving posture), rather than just erasing a subject.
 
 ### 3. Hyperparameter Mapping
 
