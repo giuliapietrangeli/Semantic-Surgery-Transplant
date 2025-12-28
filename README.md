@@ -6,12 +6,13 @@ This repository contains the implementation of **Semantic Transplant**, a framew
 
 This project focuses on the following core components:
 
-*   **`src/`**: The main source code directory containing the implementation of the Semantic Transplant framework.
-    *   `utils.py`: Defines the `StableDiffuser` class, which handles the core logic for semantic vector manipulation (injection, erasure) and attention masking.
-    *   `evaluation.py`: Script for evaluating model performance.
-*   **`semantic-translplant.ipynb`**: The primary Jupyter Notebook for interacting with the project. It demonstrates the "Semantic Transplant" methodology, allowing users to perform experiments, visualize attention maps (Grad-CAM), and explore the parameters automation through the demo.
-*   **`Report.pdf`**: A comprehensive technical report detailing the theoretical background, methodology (Semantic Integrity, Structural Fidelity), experimental results, and in-depth analysis of the model's behaviour.
-*   **`requirements.txt`**: A list of Python dependencies required to run the project.
+* **`src/`**: The main source code directory containing the implementation of the Semantic Transplant framework.
+    * `utils.py`: Defines the `StableDiffuser` class, which handles the core logic for semantic vector manipulation (injection, erasure) and attention masking.
+    * `evaluation.py`: Script for evaluating model performance.
+* **`results/`**: Stores the experimental outcomes, including generated images and detailed analyses. It is organized into subdirectories for specific experiment types (e.g., `ablation_results`, `context_swap_results`, `subject_swap_results`), datasets used (`benchmark_dataset`, `final_training_dataset`), and model testing artifacts (`models`, `model_testing`).
+* **`semantic-translplant.ipynb`**: The primary Jupyter Notebook for interacting with the project. It demonstrates the "Semantic Transplant" methodology, allowing users to perform experiments, visualize attention maps (Grad-CAM), and explore the parameters automation through the demo.
+* **`Report.pdf`**: A comprehensive technical report detailing the theoretical background, methodology (Semantic Integrity, Structural Fidelity), experimental results, and in-depth analysis of the model's behaviour.
+* **`requirements.txt`**: A list of Python dependencies required to run the project.
 
 ## Implementation Comparison / Transparency
 
