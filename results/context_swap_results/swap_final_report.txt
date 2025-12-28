@@ -1,0 +1,8 @@
+SCENARIO             | CLIP HARD  | SSIM   | DESCRIPTION
+--------------------------------------------------------------------------------
+Fish                 | 28.90       | 0.13   | two goldfishs in the woods
+Bear                 | 27.81       | 0.20   | a brown bear standing in a store aisle
+Corgi                | 31.93       | 0.36   | a dog swimming in the water with bubbles
+Sportscar            | 28.31       | 0.32   | a red sports car parked in a garage
+Sofa                 | 31.94       | 0.16   | a couch in the middle of a forest
+Yawl                 | 27.25       | 0.40   | a boat is sitting in the sand dunes

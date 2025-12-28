@@ -1,0 +1,86 @@
+[
+    {
+        "scenario_name": "A: Fish",
+        "base_prompt": "A goldfish swimming inside a glass bowl",
+        "target_object": "goldfish",
+        "paths": {
+            "Original": "results/context_swap_results/A_Fish/Original.png",
+            "Easy": "results/context_swap_results/A_Fish/Easy.png",
+            "Hard": "results/context_swap_results/A_Fish/Hard.png"
+        },
+        "params": {
+            "force": 1.0,
+            "sens": 0.15
+        }
+    },
+    {
+        "scenario_name": "B: Bear",
+        "base_prompt": "A brown bear walking in a forest",
+        "target_object": "bear",
+        "paths": {
+            "Original": "results/context_swap_results/B_Bear/Original.png",
+            "Easy": "results/context_swap_results/B_Bear/Easy.png",
+            "Hard": "results/context_swap_results/B_Bear/Hard.png"
+        },
+        "params": {
+            "force": 1.0,
+            "sens": 0.15
+        }
+    },
+    {
+        "scenario_name": "C: Corgi",
+        "base_prompt": "A corgi dog running on green grass",
+        "target_object": "corgi",
+        "paths": {
+            "Original": "results/context_swap_results/C_Corgi/Original.png",
+            "Easy": "results/context_swap_results/C_Corgi/Easy.png",
+            "Hard": "results/context_swap_results/C_Corgi/Hard.png"
+        },
+        "params": {
+            "force": 1.0,
+            "sens": 0.15
+        }
+    },
+    {
+        "scenario_name": "D: Sportscar",
+        "base_prompt": "A red sportscar driving on a asphalt road",
+        "target_object": "sportscar",
+        "paths": {
+            "Original": "results/context_swap_results/D_Sportscar/Original.png",
+            "Easy": "results/context_swap_results/D_Sportscar/Easy.png",
+            "Hard": "results/context_swap_results/D_Sportscar/Hard.png"
+        },
+        "params": {
+            "force": 0.8,
+            "sens": 0.08
+        }
+    },
+    {
+        "scenario_name": "E: Sofa",
+        "base_prompt": "A leather sofa in a living room",
+        "target_object": "sofa",
+        "paths": {
+            "Original": "results/context_swap_results/E_Sofa/Original.png",
+            "Easy": "results/context_swap_results/E_Sofa/Easy.png",
+            "Hard": "results/context_swap_results/E_Sofa/Hard.png"
+        },
+        "params": {
+            "force": 0.8,
+            "sens": 0.08
+        }
+    },
+    {
+        "scenario_name": "F: Yawl",
+        "base_prompt": "A yawl in the ocean",
+        "target_object": "yawl",
+        "paths": {
+            "Original": "results/context_swap_results/F_Yawl/Original.png",
+            "Easy": "results/context_swap_results/F_Yawl/Easy.png",
+            "Hard": "results/context_swap_results/F_Yawl/Hard.png"
+        },
+        "params": {
+            "force": 0.8,
+            "sens": 0.08
+        }
+    }
+]

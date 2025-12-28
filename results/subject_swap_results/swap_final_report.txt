@@ -1,0 +1,8 @@
+SCENARIO             | CLIP NEW   | SSIM   | DESCRIPTION
+--------------------------------------------------------------------------------
+Forest               | 28.65       | 0.38   | a tiger in the woods
+Sofa                 | 27.86       | 0.64   | a cat laying on a couch with its paws on the arm
+Fish                 | 26.62       | 0.69   | a tiger shark swims in the ocean
+Street               | 30.89       | 0.35   | a fire truck is driving down the road
+Office               | 28.65       | 0.58   | a bottle of beer on a wooden table
+Table                | 26.84       | 0.21   | a wooden plate with yellow flowers on it

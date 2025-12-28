@@ -1,0 +1,128 @@
+[
+    {
+        "scenario": "Swap 1: Forest",
+        "old_obj": "bear",
+        "new_obj": "tiger",
+        "paths": {
+            "Original": "results/subject_swap_results/Swap_1_Forest/Original.png",
+            "Swap": "results/subject_swap_results/Swap_1_Forest/Swap.png"
+        },
+        "metrics": {
+            "orig_top1": {
+                "name": "brown bear",
+                "score": 0.4944116771221161,
+                "id": 294
+            },
+            "swap_top1": {
+                "name": "tiger",
+                "score": 0.15735891461372375,
+                "id": 292
+            }
+        }
+    },
+    {
+        "scenario": "Swap 2: Sofa",
+        "old_obj": "dog",
+        "new_obj": "cat",
+        "paths": {
+            "Original": "results/subject_swap_results/Swap_2_Sofa/Original.png",
+            "Swap": "results/subject_swap_results/Swap_2_Sofa/Swap.png"
+        },
+        "metrics": {
+            "orig_top1": {
+                "name": "Rhodesian ridgeback",
+                "score": 0.32147878408432007,
+                "id": 159
+            },
+            "swap_top1": {
+                "name": "Egyptian cat",
+                "score": 0.3955599069595337,
+                "id": 285
+            }
+        }
+    },
+    {
+        "scenario": "Swap 3: Fish",
+        "old_obj": "goldfish",
+        "new_obj": "shark",
+        "paths": {
+            "Original": "results/subject_swap_results/Swap_3_Fish/Original.png",
+            "Swap": "results/subject_swap_results/Swap_3_Fish/Swap.png"
+        },
+        "metrics": {
+            "orig_top1": {
+                "name": "goldfish",
+                "score": 0.34597957134246826,
+                "id": 1
+            },
+            "swap_top1": {
+                "name": "great white shark",
+                "score": 0.45074597001075745,
+                "id": 2
+            }
+        }
+    },
+    {
+        "scenario": "Swap 4: Street",
+        "old_obj": "sportscar",
+        "new_obj": "firetruck",
+        "paths": {
+            "Original": "results/subject_swap_results/Swap_4_Street/Original.png",
+            "Swap": "results/subject_swap_results/Swap_4_Street/Swap.png"
+        },
+        "metrics": {
+            "orig_top1": {
+                "name": "sports car",
+                "score": 0.33353981375694275,
+                "id": 817
+            },
+            "swap_top1": {
+                "name": "fire engine",
+                "score": 0.1960839331150055,
+                "id": 555
+            }
+        }
+    },
+    {
+        "scenario": "Swap 5: Office",
+        "old_obj": "mug",
+        "new_obj": "beer",
+        "paths": {
+            "Original": "results/subject_swap_results/Swap_5_Office/Original.png",
+            "Swap": "results/subject_swap_results/Swap_5_Office/Swap.png"
+        },
+        "metrics": {
+            "orig_top1": {
+                "name": "cup",
+                "score": 0.17492367327213287,
+                "id": 968
+            },
+            "swap_top1": {
+                "name": "beer bottle",
+                "score": 0.47398149967193604,
+                "id": 440
+            }
+        }
+    },
+    {
+        "scenario": "Swap 6: Table",
+        "old_obj": "apple",
+        "new_obj": "daisy",
+        "paths": {
+            "Original": "results/subject_swap_results/Swap_6_Table/Original.png",
+            "Swap": "results/subject_swap_results/Swap_6_Table/Swap.png"
+        },
+        "metrics": {
+            "orig_top1": {
+                "name": "Granny Smith",
+                "score": 0.2124255746603012,
+                "id": 948
+            },
+            "swap_top1": {
+                "name": "toilet seat",
+                "score": 0.1333029568195343,
+                "id": 861
+            }
+        }
+    }
+]

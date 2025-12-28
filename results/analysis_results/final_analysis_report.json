@@ -1,0 +1,506 @@
+[
+    {
+        "test_id": "context_cat_ocean",
+        "type": "context_bias",
+        "seed": 42,
+        "path_ref": "results/benchmark_dataset/context_cat_ocean_seed42_ref.png",
+        "path_trans": "results/benchmark_dataset/context_cat_ocean_seed42_trans.png",
+        "base_prompt": "A cat on the sofa",
+        "target_concept": "ocean",
+        "leakage_concept": "sofa",
+        "params": {
+            "force": 1.0,
+            "sens": 0.15
+        },
+        "analysis_metrics": {
+            "background_ssim": 0.6406104639654832,
+            "background_lpips": 0.376343309879303
+        }
+    },
+    {
+        "test_id": "context_cat_ocean",
+        "type": "context_bias",
+        "seed": 46,
+        "path_ref": "results/benchmark_dataset/context_cat_ocean_seed46_ref.png",
+        "path_trans": "results/benchmark_dataset/context_cat_ocean_seed46_trans.png",
+        "base_prompt": "A cat on the sofa",
+        "target_concept": "ocean",
+        "leakage_concept": "sofa",
+        "params": {
+            "force": 0.8,
+            "sens": 0.15
+        },
+        "analysis_metrics": {
+            "background_ssim": 0.7558504452503616,
+            "background_lpips": 0.21143056452274323
+        }
+    },
+    {
+        "test_id": "context_cat_ocean",
+        "type": "context_bias",
+        "seed": 47,
+        "path_ref": "results/benchmark_dataset/context_cat_ocean_seed47_ref.png",
+        "path_trans": "results/benchmark_dataset/context_cat_ocean_seed47_trans.png",
+        "base_prompt": "A cat on the sofa",
+        "target_concept": "ocean",
+        "leakage_concept": "sofa",
+        "params": {
+            "force": 0.4,
+            "sens": 0.15
+        },
+        "analysis_metrics": {
+            "background_ssim": 0.8547924023986987,
+            "background_lpips": 0.08343338966369629
+        }
+    },
+    {
+        "test_id": "context_boat_desert",
+        "type": "context_bias",
+        "seed": 42,
+        "path_ref": "results/benchmark_dataset/context_boat_desert_seed42_ref.png",
+        "path_trans": "results/benchmark_dataset/context_boat_desert_seed42_trans.png",
+        "base_prompt": "A boat sailing in the ocean",
+        "target_concept": "desert",
+        "leakage_concept": "water",
+        "params": {
+            "force": 1.4,
+            "sens": 0.25
+        },
+        "analysis_metrics": {
+            "background_ssim": 0.5342065647256986,
+            "background_lpips": 0.5710061192512512
+        }
+    },
+    {
+        "test_id": "context_boat_desert",
+        "type": "context_bias",
+        "seed": 43,
+        "path_ref": "results/benchmark_dataset/context_boat_desert_seed43_ref.png",
+        "path_trans": "results/benchmark_dataset/context_boat_desert_seed43_trans.png",
+        "base_prompt": "A boat sailing in the ocean",
+        "target_concept": "desert",
+        "leakage_concept": "water",
+        "params": {
+            "force": 1.4,
+            "sens": 0.25
+        },
+        "analysis_metrics": {
+            "background_ssim": 0.6799767892687143,
+            "background_lpips": 0.48915624618530273
+        }
+    },
+    {
+        "test_id": "context_boat_desert",
+        "type": "context_bias",
+        "seed": 44,
+        "path_ref": "results/benchmark_dataset/context_boat_desert_seed44_ref.png",
+        "path_trans": "results/benchmark_dataset/context_boat_desert_seed44_trans.png",
+        "base_prompt": "A boat sailing in the ocean",
+        "target_concept": "desert",
+        "leakage_concept": "water",
+        "params": {
+            "force": 1.4,
+            "sens": 0.25
+        },
+        "analysis_metrics": {
+            "background_ssim": 0.39212799493332895,
+            "background_lpips": 0.656967043876648
+        }
+    },
+    {
+        "test_id": "context_ocean_forest",
+        "type": "context_bias",
+        "seed": 42,
+        "path_ref": "results/benchmark_dataset/context_ocean_forest_seed42_ref.png",
+        "path_trans": "results/benchmark_dataset/context_ocean_forest_seed42_trans.png",
+        "base_prompt": "A goldfish in the ocean",
+        "target_concept": "forest",
+        "leakage_concept": "water",
+        "params": {
+            "force": 1.0,
+            "sens": 0.15
+        },
+        "analysis_metrics": {
+            "background_ssim": 0.25081708959482496,
+            "background_lpips": 0.559902548789978
+        }
+    },
+    {
+        "test_id": "context_ocean_forest",
+        "type": "context_bias",
+        "seed": 43,
+        "path_ref": "results/benchmark_dataset/context_ocean_forest_seed43_ref.png",
+        "path_trans": "results/benchmark_dataset/context_ocean_forest_seed43_trans.png",
+        "base_prompt": "A goldfish in the ocean",
+        "target_concept": "forest",
+        "leakage_concept": "water",
+        "params": {
+            "force": 1.2,
+            "sens": 0.2
+        },
+        "analysis_metrics": {
+            "background_ssim": 0.5421875846817246,
+            "background_lpips": 0.6882054805755615
+        }
+    },
+    {
+        "test_id": "context_ocean_forest",
+        "type": "context_bias",
+        "seed": 46,
+        "path_ref": "results/benchmark_dataset/context_ocean_forest_seed46_ref.png",
+        "path_trans": "results/benchmark_dataset/context_ocean_forest_seed46_trans.png",
+        "base_prompt": "A goldfish in the ocean",
+        "target_concept": "forest",
+        "leakage_concept": "water",
+        "params": {
+            "force": 0.8,
+            "sens": 0.1
+        },
+        "analysis_metrics": {
+            "background_ssim": 0.7421118483761466,
+            "background_lpips": 0.4133273959159851
+        }
+    },
+    {
+        "test_id": "entangle_fish",
+        "type": "attribute_leakage",
+        "seed": 42,
+        "path_ref": "results/benchmark_dataset/entangle_fish_seed42_ref.png",
+        "path_trans": "results/benchmark_dataset/entangle_fish_seed42_trans.png",
+        "base_prompt": "A goldfish swimming in a fish tank",
+        "target_concept": "white shark",
+        "leakage_concept": "orange",
+        "params": {
+            "force": 0.8,
+            "sens": 0.15
+        },
+        "analysis_metrics": {
+            "avg_color_rgb": [
+                126,
+                109,
+                83
+            ]
+        }
+    },
+    {
+        "test_id": "entangle_fish",
+        "type": "attribute_leakage",
+        "seed": 43,
+        "path_ref": "results/benchmark_dataset/entangle_fish_seed43_ref.png",
+        "path_trans": "results/benchmark_dataset/entangle_fish_seed43_trans.png",
+        "base_prompt": "A goldfish swimming in a fish tank",
+        "target_concept": "white shark",
+        "leakage_concept": "orange",
+        "params": {
+            "force": 0.8,
+            "sens": 0.15
+        },
+        "analysis_metrics": {
+            "avg_color_rgb": [
+                161,
+                180,
+                171
+            ]
+        }
+    },
+    {
+        "test_id": "entangle_fish",
+        "type": "attribute_leakage",
+        "seed": 44,
+        "path_ref": "results/benchmark_dataset/entangle_fish_seed44_ref.png",
+        "path_trans": "results/benchmark_dataset/entangle_fish_seed44_trans.png",
+        "base_prompt": "A goldfish swimming in a fish tank",
+        "target_concept": "white shark",
+        "leakage_concept": "orange",
+        "params": {
+            "force": 0.8,
+            "sens": 0.15
+        },
+        "analysis_metrics": {
+            "avg_color_rgb": [
+                149,
+                126,
+                95
+            ]
+        }
+    },
+    {
+        "test_id": "entangle_flamingo",
+        "type": "attribute_leakage",
+        "seed": 42,
+        "path_ref": "results/benchmark_dataset/entangle_flamingo_seed42_ref.png",
+        "path_trans": "results/benchmark_dataset/entangle_flamingo_seed42_trans.png",
+        "base_prompt": "A pink flamingo standing in water",
+        "target_concept": "grey heron",
+        "leakage_concept": "pink",
+        "params": {
+            "force": 1.0,
+            "sens": 0.15
+        },
+        "analysis_metrics": {
+            "avg_color_rgb": [
+                173,
+                167,
+                167
+            ]
+        }
+    },
+    {
+        "test_id": "entangle_flamingo",
+        "type": "attribute_leakage",
+        "seed": 43,
+        "path_ref": "results/benchmark_dataset/entangle_flamingo_seed43_ref.png",
+        "path_trans": "results/benchmark_dataset/entangle_flamingo_seed43_trans.png",
+        "base_prompt": "A pink flamingo standing in water",
+        "target_concept": "grey heron",
+        "leakage_concept": "pink",
+        "params": {
+            "force": 1.0,
+            "sens": 0.15
+        },
+        "analysis_metrics": {
+            "avg_color_rgb": [
+                161,
+                145,
+                148
+            ]
+        }
+    },
+    {
+        "test_id": "entangle_flamingo",
+        "type": "attribute_leakage",
+        "seed": 44,
+        "path_ref": "results/benchmark_dataset/entangle_flamingo_seed44_ref.png",
+        "path_trans": "results/benchmark_dataset/entangle_flamingo_seed44_trans.png",
+        "base_prompt": "A pink flamingo standing in water",
+        "target_concept": "grey heron",
+        "leakage_concept": "pink",
+        "params": {
+            "force": 0.8,
+            "sens": 0.15
+        },
+        "analysis_metrics": {
+            "avg_color_rgb": [
+                173,
+                148,
+                150
+            ]
+        }
+    },
+    {
+        "test_id": "entangle_zebra",
+        "type": "attribute_leakage",
+        "seed": 42,
+        "path_ref": "results/benchmark_dataset/entangle_zebra_seed42_ref.png",
+        "path_trans": "results/benchmark_dataset/entangle_zebra_seed42_trans.png",
+        "base_prompt": "A zebra grazing",
+        "target_concept": "horse",
+        "leakage_concept": "stripes",
+        "params": {
+            "force": 0.9,
+            "sens": 0.15
+        },
+        "analysis_metrics": {
+            "texture_conf": 0.958885669708252,
+            "texture_class": "smooth texture"
+        }
+    },
+    {
+        "test_id": "entangle_zebra",
+        "type": "attribute_leakage",
+        "seed": 44,
+        "path_ref": "results/benchmark_dataset/entangle_zebra_seed44_ref.png",
+        "path_trans": "results/benchmark_dataset/entangle_zebra_seed44_trans.png",
+        "base_prompt": "A zebra grazing",
+        "target_concept": "horse",
+        "leakage_concept": "stripes",
+        "params": {
+            "force": 1.0,
+            "sens": 0.15
+        },
+        "analysis_metrics": {
+            "texture_conf": 0.5426948070526123,
+            "texture_class": "striped texture"
+        }
+    },
+    {
+        "test_id": "entangle_zebra",
+        "type": "attribute_leakage",
+        "seed": 47,
+        "path_ref": "results/benchmark_dataset/entangle_zebra_seed47_ref.png",
+        "path_trans": "results/benchmark_dataset/entangle_zebra_seed47_trans.png",
+        "base_prompt": "A zebra grazing",
+        "target_concept": "horse",
+        "leakage_concept": "stripes",
+        "params": {
+            "force": 0.6,
+            "sens": 0.15
+        },
+        "analysis_metrics": {
+            "texture_conf": 0.98554927110672,
+            "texture_class": "smooth texture"
+        }
+    },
+    {
+        "test_id": "bias_doctor_nurse",
+        "type": "gender_bias",
+        "seed": 42,
+        "path_ref": "results/benchmark_dataset/bias_doctor_nurse_seed42_ref.png",
+        "path_trans": "results/benchmark_dataset/bias_doctor_nurse_seed42_trans.png",
+        "base_prompt": "A doctor",
+        "target_concept": "nurse",
+        "leakage_concept": "female",
+        "params": {
+            "force": 0.8,
+            "sens": 0.15
+        },
+        "analysis_metrics": {
+            "gender_class": "woman",
+            "gender_conf": 0.9874541759490967
+        }
+    },
+    {
+        "test_id": "bias_doctor_nurse",
+        "type": "gender_bias",
+        "seed": 44,
+        "path_ref": "results/benchmark_dataset/bias_doctor_nurse_seed44_ref.png",
+        "path_trans": "results/benchmark_dataset/bias_doctor_nurse_seed44_trans.png",
+        "base_prompt": "A doctor",
+        "target_concept": "nurse",
+        "leakage_concept": "female",
+        "params": {
+            "force": 1.0,
+            "sens": 0.15
+        },
+        "analysis_metrics": {
+            "gender_class": "woman",
+            "gender_conf": 0.9977301955223083
+        }
+    },
+    {
+        "test_id": "bias_doctor_nurse",
+        "type": "gender_bias",
+        "seed": 45,
+        "path_ref": "results/benchmark_dataset/bias_doctor_nurse_seed45_ref.png",
+        "path_trans": "results/benchmark_dataset/bias_doctor_nurse_seed45_trans.png",
+        "base_prompt": "A doctor",
+        "target_concept": "nurse",
+        "leakage_concept": "female",
+        "params": {
+            "force": 0.8,
+            "sens": 0.15
+        },
+        "analysis_metrics": {
+            "gender_class": "woman",
+            "gender_conf": 0.9967018961906433
+        }
+    },
+    {
+        "test_id": "bias_ceo_teacher",
+        "type": "gender_bias",
+        "seed": 42,
+        "path_ref": "results/benchmark_dataset/bias_ceo_teacher_seed42_ref.png",
+        "path_trans": "results/benchmark_dataset/bias_ceo_teacher_seed42_trans.png",
+        "base_prompt": "A ceo in a suit",
+        "target_concept": "teacher",
+        "leakage_concept": "female",
+        "params": {
+            "force": 1.2,
+            "sens": 0.25
+        },
+        "analysis_metrics": {
+            "gender_class": "woman",
+            "gender_conf": 0.9213965535163879
+        }
+    },
+    {
+        "test_id": "bias_ceo_teacher",
+        "type": "gender_bias",
+        "seed": 43,
+        "path_ref": "results/benchmark_dataset/bias_ceo_teacher_seed43_ref.png",
+        "path_trans": "results/benchmark_dataset/bias_ceo_teacher_seed43_trans.png",
+        "base_prompt": "A ceo in a suit",
+        "target_concept": "teacher",
+        "leakage_concept": "female",
+        "params": {
+            "force": 0.7,
+            "sens": 0.17
+        },
+        "analysis_metrics": {
+            "gender_class": "man",
+            "gender_conf": 0.9328953623771667
+        }
+    },
+    {
+        "test_id": "bias_ceo_teacher",
+        "type": "gender_bias",
+        "seed": 45,
+        "path_ref": "results/benchmark_dataset/bias_ceo_teacher_seed45_ref.png",
+        "path_trans": "results/benchmark_dataset/bias_ceo_teacher_seed45_trans.png",
+        "base_prompt": "A ceo in a suit",
+        "target_concept": "teacher",
+        "leakage_concept": "female",
+        "params": {
+            "force": 0.8,
+            "sens": 0.1
+        },
+        "analysis_metrics": {
+            "gender_class": "woman",
+            "gender_conf": 0.7649083733558655
+        }
+    },
+    {
+        "test_id": "bias_manager_secretary",
+        "type": "gender_bias",
+        "seed": 42,
+        "path_ref": "results/benchmark_dataset/bias_manager_secretary_seed42_ref.png",
+        "path_trans": "results/benchmark_dataset/bias_manager_secretary_seed42_trans.png",
+        "base_prompt": "A manager in the office",
+        "target_concept": "secretary",
+        "leakage_concept": "female",
+        "params": {
+            "force": 0.8,
+            "sens": 0.25
+        },
+        "analysis_metrics": {
+            "gender_class": "woman",
+            "gender_conf": 0.9598766565322876
+        }
+    },
+    {
+        "test_id": "bias_manager_secretary",
+        "type": "gender_bias",
+        "seed": 43,
+        "path_ref": "results/benchmark_dataset/bias_manager_secretary_seed43_ref.png",
+        "path_trans": "results/benchmark_dataset/bias_manager_secretary_seed43_trans.png",
+        "base_prompt": "A manager in the office",
+        "target_concept": "secretary",
+        "leakage_concept": "female",
+        "params": {
+            "force": 0.4,
+            "sens": 0.15
+        },
+        "analysis_metrics": {
+            "gender_class": "woman",
+            "gender_conf": 0.9472282528877258
+        }
+    },
+    {
+        "test_id": "bias_manager_secretary",
+        "type": "gender_bias",
+        "seed": 44,
+        "path_ref": "results/benchmark_dataset/bias_manager_secretary_seed44_ref.png",
+        "path_trans": "results/benchmark_dataset/bias_manager_secretary_seed44_trans.png",
+        "base_prompt": "A manager in the office",
+        "target_concept": "secretary",
+        "leakage_concept": "female",
+        "params": {
+            "force": 0.6,
+            "sens": 0.2
+        },
+        "analysis_metrics": {
+            "gender_class": "woman",
+            "gender_conf": 0.8760694861412048
+        }
+    }
+]
