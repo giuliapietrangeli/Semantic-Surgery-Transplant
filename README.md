@@ -1,46 +1,59 @@
-# Semantic Transplant: Stress-Testing Text-to-Image Models
 
-This repository contains the implementation of **Semantic Transplant**, a framework for probing and manipulating the latent semantic space of Text-to-Image models (specifically Stable Diffusion). This project explores methods like **Vector Injection** and **Concept Erasure** to analyze model sensitivity, bias, and robustness.
+# Latent Semantic Surgery: Probing and Manipulating T2I Models
 
-## Project Structure
+This repository introduces **Semantic Transplantation**, a research framework designed to probe and surgically manipulate the latent semantic space of Text-to-Image (T2I) diffusion models. By extending the *Semantic Surgery* framework (Xiong et al., NeurIPS 2025), we transition from concept erasure to a novel **Vector Injection** mechanism, enabling precise zero-shot attribute replacement.
 
-This project focuses on the following core components:
+## Core Contributions
 
-* **`src/`**: The main source code directory containing the implementation of the Semantic Transplant framework.
-    * `utils.py`: Defines the `StableDiffuser` class, which handles the core logic for semantic vector manipulation (injection, erasure) and attention masking.
-    * `evaluation.py`: Script for evaluating model performance.
-* **`results/`**: Stores the experimental outcomes, including generated images and detailed analyses. It is organized into subdirectories for specific experiment types (e.g., `ablation_results`, `context_swap_results`, `subject_swap_results`), datasets used (`benchmark_dataset`, `final_training_dataset`), and model testing artifacts (`models`, `model_testing`).
-* **`semantic-translplant.ipynb`**: The primary Jupyter Notebook for interacting with the project. It demonstrates the "Semantic Transplant" methodology, allowing users to perform experiments, visualize attention maps (Grad-CAM), and explore the parameters automation through the demo.
-* **`Report.pdf`**: A comprehensive technical report detailing the theoretical background, methodology (Semantic Integrity, Structural Fidelity), experimental results, and in-depth analysis of the model's behaviour.
-* **`requirements.txt`**: A list of Python dependencies required to run the project.
+### 1. From Erasure to Transplantation
+While original methods focus on erasing concepts, we introduce a surgical injection formula designed to replace a source concept ($e_{src}$) with a target concept ($e_{new}$) directly within the CLIP embedding space:
 
-## Implementation Comparison / Transparency
+$$e^{*} = e_{in} + \lambda \cdot M_{\alpha} \odot (e_{new} - e_{src})$$
 
-To provide full transparency on our contributions, we have included a **Comparison Module** in the `implementation_comparison/` directory. This folder allows for a direct code-level comparison between the original "Concept Erasure" method and our proposed "Semantic Transplant" framework.
+**Legend:**
+* $e^*$: The resulting "transplanted" latent embedding.
+* $e_{in}$: The initial CLIP text embedding.
+* $\lambda$: A scalar factor that scales the "injection force".
+* $M_{\alpha}$: A spatial mask derived from token-wise similarity, thresholded by sensitivity $\alpha$.
+* $\odot$: Denotes the Hadamard (element-wise) product.
+* $(e_{new} - e_{src})$: The semantic direction vector for attribute replacement.
 
-*   **`utils_original.py`**: The baseline implementation (Reference).
-*   **`utils_proposed.py`**: Our modified implementation featuring **Vector Injection** and **Token-Wise Precision**.
-*   **`COMPARISON.md`**: A detailed documentation of the architectural changes and novelties introduced.
+This allows for replacing subjects or contexts while preserving global context and structural fidelity.
 
-## Getting Started
+### 2. SurgeryNet: Automated Parameter Prediction
+To address the non-linearity of the hyperparameter landscape ($\lambda, \alpha$), we developed **SurgeryNet**, a Multi-Layer Perceptron (MLP) that automates the prediction of optimal surgical parameters directly from input text embeddings. SurgeryNet outperformed classical Random Forest baselines with a **12% error reduction** (MAE 0.0918 vs. 0.1043).
 
-### Prerequisites
+### 3. Latent Bias & Robustness Probing
+A rigorous stress-test of Stable Diffusion's latent rigidity, identifying:
+* **Shape Bias**: Dependency on geometric priors; morphologically similar swaps (e.g., $Dog \rightarrow Cat$) achieve high consistency ($IoU \approx 0.88$), while dissimilar ones (e.g., $Apple \rightarrow Daisy$) lead to structural hallucinations].
+* **Attribute Entanglement**: "Visual leakage" where target concepts inherit source traits, such as a shark retaining an orange color when swapped from a goldfish.
+* **Societal Bias**: Quantifying a **100% Gender Flip Rate** in specific occupational transformations (e.g., *Doctor* $\rightarrow$ *Nurse*).
 
-Ensure you have Python installed. You can install the required dependencies using pip:
+## Repository Structure
+
+* `src/`: Core implementation of the `StableDiffuser` class and evaluation metrics.
+* `implementation_comparison/`: Side-by-side code comparison between the baseline (Xiong et al.) and our proposed Vector Injection framework.
+* `results/`: Detailed ablation studies and context/subject swap outcomes.
+* `Report.pdf`: Comprehensive technical paper detailing methodology, "Golden Score" metrics, and experimental findings.
+* `semantic-transplant.ipynb`: Interactive demonstration and Grad-CAM attention visualization.
+
+## Installation & Usage
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Usage
+Run the `semantic-transplant.ipynb` notebook to explore the automated "Surgery Autopilot" and visualize real-time semantic manipulations.
 
-1.  **Interactive Exploration**: Open and run `semantic-translplant.ipynb` to step through the "Semantic Transplant" process, from environment setup to live demonstrations. This notebook serves as the main entry point for understanding and verifying the method.
-2.  **In-Depth Analysis**: Refer to `Report.pdf` for a detailed explanation of the algorithms, experimental setup, and findings.
+## Quantitative Highlights
+* **SurgeryNet Performance**: 12% error reduction in parameter prediction compared to Random Forest.
+* **Spatial Consistency**: Achieved $IoU \approx 0.88$ for morphologically similar subject swaps.
+* **Golden Score**: Optimization based on a composite metric $S$ balancing CLIP scores and SSIM ($w_{c}=0.6, w_{s}=0.4$).
 
-## Notes
+## Credits
+Developed as part of the Advanced Machine Learning & Computer Vision curriculum (2025/2026). Based on the framework by Xiong et al. (2025).
 
-*   This project uses `diffusers` and `transformers` libraries for stable diffusion and CLIP models.
-*   Hardware acceleration (CUDA/MPS) is recommended for inference.
+**Authors**: Giulia Pietrangeli, Lorenzo Musso[cite: 74].
 
----
-*University Project - Advanced Machine Learning & Computer Vision | 2025*
+## License
+MIT License
