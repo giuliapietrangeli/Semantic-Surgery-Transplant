@@ -53,7 +53,7 @@ Run the `semantic-transplant.ipynb` notebook to explore the automated "Surgery A
 ## Credits
 Developed as part of the Advanced Machine Learning & Computer Vision curriculum (2025/2026). Based on the framework by Xiong et al. (2025).
 
-**Authors**: Giulia Pietrangeli, Lorenzo Musso[cite: 74].
+**Authors**: Giulia Pietrangeli, Lorenzo Musso.
 
 ## License
 MIT License
